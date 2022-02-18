@@ -8,7 +8,7 @@ def multiplication_egyptienne(a,b):
     while a != 0:
         if (a % 2) == 1:
             i = i+b
-        b = b*2
+        b = b+b
         a = a//2
     return(i)
 
