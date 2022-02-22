@@ -1,19 +1,15 @@
 #Mathieu Finot
 #POO syracuse
 
-with open("tp1.txt", "r") as f:
-    contenu = f.read()
+f = open("tp1.txt", "rw")
+n=f.readlines()
 
-
-a=int(input())
-n=int(input())
-i=0
 print(n)
-while i < a:
+while n != 1:
     if n % 2 == 0:
       n=n//2  
     else:
         n=n*3+1
     i=i+1
     print(n)
-
+f.close()
