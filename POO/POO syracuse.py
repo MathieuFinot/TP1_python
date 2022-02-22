@@ -6,13 +6,20 @@ test =[]
 test = f.readlines()
 n=int(test[0])
 
+class operation:
+    
+	def egale0(n):
+		return n//2
 
+	def diffzero(n):
+		return n*3+1
 
 while n != 1:
     if n % 2 == 0:
-      n=n//2  
+      n=operation.egale0(n)  
     else:
-        n=n*3+1
+        n=operation.diffzero(n)
     f.write("\n")
     f.write(str(n))
 f.close()
+
